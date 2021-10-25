@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>avatar.png</file>
+        <file>register.png</file>
+        <file>return.png</file>
+        <file>find_password.png</file>
+        <file>close.png</file>
+        <file>max.png</file>
+        <file>min.png</file>
+        <file>title.png</file>
+        <file>sale_manage.png</file>
+        <file>custom_manage.png</file>
+        <file>supplier_manage.png</file>
+        <file>update_goods.png</file>
+        <file>add_goods.png</file>
+        <file>goods_manage.png</file>
+        <file>back.png</file>
+        <file>background.jpg</file>
+        <file>qtDb.db</file>
+        <file>logo.png</file>
+        <file>login.jpg</file>
+        <file>left.png</file>
+        <file>right.png</file>
+        <file>email.png</file>
+        <file>email2.png</file>
+        <file>goods.png</file>
+        <file>kefu.png</file>
+        <file>kefu2.png</file>
+        <file>message.png</file>
+        <file>goods2.png</file>
+        <file>b1.jpg</file>
+        <file>b2.jpg</file>
+        <file>b3.jpg</file>
+        <file>b4.jpg</file>
+        <file>b5.jpg</file>
+        <file>goods3.png</file>
+        <file>goods4.png</file>
+        <file>email3.png</file>
+        <file>email4.png</file>
+    </qresource>
+</RCC>
