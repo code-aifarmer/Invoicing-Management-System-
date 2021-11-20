@@ -13,6 +13,7 @@
 PS:点击右侧的小箭头可以隐藏掉左侧的菜单栏  
 ![图片3](https://user-images.githubusercontent.com/73326606/142714017-a9cc3893-61ca-4ce9-8a51-5776ee767226.png)
 ![图片4](https://user-images.githubusercontent.com/73326606/142714018-3d06ec4d-9bd5-40d4-8fac-29a971fc2cf9.png)
-![图片2](https://user-images.githubusercontent.com/73326606/142714021-c72deded-0b1f-445b-96b9-b6d52642287a.png)
+![图片2](https://user-images.githubusercontent.com/73326606/142714074-539a6224-99ca-429d-8cb0-8eccb0075027.png)
+
 
 
