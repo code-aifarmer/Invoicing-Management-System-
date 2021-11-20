@@ -9,3 +9,6 @@
 登录，注册，找回密码，库存管理模块，聊天模块和客服模块，库存管理模块包括货物的增删改查，导出EXCEl等功能，聊天模块也可以和经销商进行聊天等。
 4.下面贴几张丑逼界面吧：  
 ![QQ图片20211120115633](https://user-images.githubusercontent.com/73326606/142713655-82ce77e9-8066-42bd-9240-f7131e7e7521.png)
+![image](https://user-images.githubusercontent.com/73326606/142713742-b317e80f-57c8-494f-bbb7-5cdb8b76d221.png)
+![image](https://user-images.githubusercontent.com/73326606/142713750-a13490cb-c431-4ac9-8a39-42f6c829e13d.png)
+PS:点击右侧的小箭头可以隐藏掉左侧的菜单栏
