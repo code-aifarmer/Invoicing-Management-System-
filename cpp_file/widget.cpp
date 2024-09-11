@@ -24,6 +24,21 @@ QString getRandomString(int length)
     delete[] ch;
     return ret;
 }
+/*
+void Widget::sendEmail() {
+    if (lastSentTime.isValid() && lastSentTime.secsTo(QDateTime::currentDateTime()) < cooldownSeconds) {
+        QMessageBox::warning(this, "提示", "发送太频繁，请稍后再试");
+        return;
+    }
+
+    lastSentTime = QDateTime::currentDateTime(); // 更新发送时间
+
+    // 以下是你已经有的发送逻辑
+    tcpSocket->connectToHost("smtp.qq.com", 25);
+    connect(tcpSocket, &QTcpSocket::readyRead, this, &Widget::readyReadSlot);
+}
+//TODO:此处实现冷却机制，保证验证码发送的幂等性，通过QTimer设置冷却时间（上述代码并非可以直接放入代码中运行，需进行修改和调整）
+*/
 void get_email()
 {
 
