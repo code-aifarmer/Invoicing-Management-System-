@@ -224,4 +224,60 @@ void Register::on_back_clicked()
     (new Login)->show();
     this->hide();
 }
+/*
+/*###############################################################################################################################################*/
+//源代码为明文存储密码 可引入密码哈希处理，确保数据库中存储的是密码的哈希而不是明文密码。选择使用 bcrypt 来实现密码的安全存储，需要在Qt项目中集成 bcrypt 库。
+#include "bcrypt/BCrypt.hpp"
 
+void Register::on_pushButton_2_clicked()
+{
+    QString username, password, email;
+    if(ui->set_password->text().isEmpty()) {
+        QMessageBox::about(NULL, "提示", "密码不能为空");
+        return;
+    }
+    QString judge_same_password1 = ui->set_password->text();
+    QString judge_same_password2 = ui->confirm_password->text();
+    if(judge_same_password1 != judge_same_password2) {
+        QMessageBox::about(NULL, "提示", "两次输入的密码不一致");
+        return;
+    }
+    if(ui->Input_name->text().isEmpty()) {
+        QMessageBox::about(NULL, "提示", "账号不能为空");
+        return;
+    } else {
+        username = ui->Input_name->text();
+    }
+    if(judge_same_password1 == judge_same_password2) {
+        password = QString::fromStdString(BCrypt::generateHash(ui->confirm_password->text().toStdString()));
+    }
+    if(ui->Input_email->text().isEmpty()) {
+        QMessageBox::about(NULL, "提示", "邮箱不能为空");
+        return;
+    } else {
+        email = ui->Input_email->text();
+    }
+    if(ui->confirm->text() != "pass") {  // For debugging purposes only
+        QMessageBox::about(NULL, "提示", "验证码有误");
+        return;
+    }
+
+    // Database related operations
+    database *userDb = database::getdatabase();
+    if(userDb->queryusername(username)) {
+        QMessageBox::information(NULL, "注册", "用户名已被注册", QMessageBox::Ok);
+        return;
+    }
+    if(userDb->queryemail(email)) {
+        QMessageBox::information(NULL, "注册", "邮箱号只能绑定一个账号，注册失败", QMessageBox::Ok);
+        return;
+    }
+    bool ok = userDb->addRegiserUser(username, password, email);
+    if(!ok) {
+        QMessageBox::information(NULL, "注册", "注册失败", QMessageBox::Ok);
+    } else {
+        QMessageBox::information(NULL, "注册", "注册成功", QMessageBox::Ok);
+    }
+}
+
+*/
